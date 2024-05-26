@@ -3,6 +3,9 @@
 DIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 CHEZMOI_REPONAME="Disservin"
 
+GIT_USERNAME="Disservin"
+GIT_EMAIL="disservin.social@gmail.com"
+
 echo $DIR
 echo $(whoami)
 
@@ -21,7 +24,7 @@ trap 'die $?' EXIT
 "$DIR/modules/curl.sh"
 
 # Install git
-"$DIR/modules/git.sh"
+"$DIR/modules/git.sh" $GIT_USERNAME $GIT_EMAIL
 
 # Install tmux
 "$DIR/modules/tmux.sh"
