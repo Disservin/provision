@@ -47,6 +47,12 @@ trap 'die $?' EXIT
 # Install JetBrains Mono Nerd font
 "$DIR/modules/nerd_font.sh"
 
+# Install ripgrep
+"$DIR/modules/rg.sh"
+
+# Install fzf
+"$DIR/modules/fzf.sh"
+
 echo "Provisioning complete! Restart your terminal."
 
 # Switch to zsh
