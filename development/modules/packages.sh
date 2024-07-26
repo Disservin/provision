@@ -2,4 +2,4 @@
 
 echo "Installing various packages..."
 
-sudo apt-get -y install ripgrep fzf clangd
+sudo apt-get -y install clangd
